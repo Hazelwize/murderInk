@@ -1,0 +1,391 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/******************************************
+/* BASE
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size:62.5%;
+}
+.wrapper{
+  width: 1440px;
+  margin: 0 auto; 
+  background: black; 
+  animation: forwards 10s ease-in-out 2s infinite turnon;
+}
+@keyframes turnon{
+  0%, 50%, 100% {
+    box-shadow: 40px 40px 80px RGBa(62,147,239,1), -40px 40px 80px RGBa(62,147,239,1);
+  }
+  25%, 75%{
+    box-shadow: 40px 40px 80px RGBa(62,147,239,.2), -40px 40px 80px RGBa(62,147,239,.2);
+  }
+}
+body{
+  font:bold  4rem 'Barlow Condensed', sans-serif;
+  color: rgb(226, 226, 226);
+  background: url(https://cdn.glitch.global/cfb4b1f1-c945-4696-9b74-dcabaf430d46/carbon-fiber-01.jpg?v=1645741035388) fixed top left no-repeat;  
+}
+h1{
+  position: relative;
+  bottom: 100px;
+  font-size: 15rem;
+  transition-duration: 1s;
+  color: rgb(226, 226, 226);
+  text-shadow: 15px 10px 0px black;
+  
+}
+
+header{
+  margin: 0 auto;
+  
+  width: 90%;
+  justify-content: center;
+  border-radius: 0 0 20px 20px;
+  background: linear-gradient(rgb(0, 0, 0) 10%, rgb(44, 44, 44) 97%, rgb(67, 67, 67) 100%);
+  box-shadow: 0 10px 10px black;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+nav{
+  
+  width:60%;
+  justify-content: center;
+}
+ul{
+  padding: 30px 0;
+  width: 100%;
+  justify-content: space-between;
+}
+.gridTwoTitle{
+  height: 250px;
+  width:100%;
+  font-size: 10rem;
+  justify-content: center;
+  padding-top: 40px;
+}
+.playerInfo{
+  width: 1350px;
+  height: 800px;
+  padding: 30px 100px;
+  background: linear-gradient(#f5cf8f, #d0b078); 
+  border-radius: 20px 20px 0 0;
+  box-shadow: 4px -2px 5px rgba(0,0,0,.4);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  
+}
+.block-1,.block-2,.block-3{
+  flex:1;
+  justify-content: center;
+  align-items: justify;
+  width: 50%;
+  
+}
+.block-1{
+  margin-top: 100px;
+  padding: 20px; 
+  width: 60%;
+  background:url(../assets/topSecret.png) 0 0 no-repeat;
+  background-size: contain;
+}
+.block-1>img{
+  justify-content: flex-start;
+  border-radius: 50%;
+  align-self:flex-start;
+  
+}
+h4{
+  color: black;
+  font-size: 7rem;
+  text-decoration: underline;
+  
+}
+
+.block-3{
+
+  height: 700px;
+  width: 400px;
+  
+}
+iframe{
+  box-shadow: 10px 10px 10px black;
+  border-radius: 20px;
+  border: 10px solid black;
+}
+.favorites{
+
+  color: black;
+}
+.favorites span{
+  font-size: 3rem;
+  text-decoration: underline;
+  color: white;
+  text-shadow: 2px 3px 3px black;
+}
+
+/* =================================================
+LAYOUT
+================================================= */
+.grid-1{
+  /* height: 1050px; */
+  background:linear-gradient(210deg, transparent 900px, black 901px, RGB(43,188,238) 920px, RGB(119,27,243) 100%), radial-gradient(RGB(226,143,148) 10%,RGB(119,27,243) 100%);  
+}
+.navList{
+  align-items: center;
+}
+.navList>a{
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.splash{
+  margin-bottom: 50px;
+  padding: 0 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+.logo{
+  width: 800px;
+  display: block; 
+  border-radius: 30px;
+}
+.folder{
+  justify-content: center;
+  width: 1300px;
+ 
+
+}
+.grid-2{
+  justify-content: center;
+  background: white;
+  background: linear-gradient(black,rgb(86, 53, 133) 3%,RGB(119,27,243) 100%);
+}
+.tabs{
+  width: 100%;
+  justify-content: center;
+  margin-bottom: -30px;
+}
+.members{
+  cursor: pointer;
+  width: 20%;
+  height: 60px;
+  color: black;
+  background: #f5cf8f;
+  box-shadow: inset -2px -3px 10px black, 4px -2px 5px rgba(0,0,0,.4);
+  justify-content: center;
+  align-items: center;
+  border-radius: 20% 20% 0 0;
+}
+h2{
+  text-shadow:15px 10px 0px black; 
+  transition-duration: 1s;
+}
+.members>img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  
+}
+.block-1>img{
+  height: 130px;
+  width: 130px;
+}
+.navBtn{
+  display: none;
+  height: 30px;
+ 
+}
+.bar1,.bar2{
+  width: 30px;
+  display: inline-block;
+  position: relative;
+  padding: 5px 10px;
+  background: white;
+}
+.bar1{
+  left: 7px;
+  rotate: 45deg;
+  transition: .5s ease-in;
+}
+.bar2{
+  left: -7px;
+  rotate: -45deg;
+  transition: .5s ease-in;
+}
+
+
+/* =====================================================
+STATE
+===================================================== */
+
+h1:hover, h2:hover{
+  text-shadow: -5px -5px 5px  #BD397B, 5px 5px 0px #39BDBD; 
+  transition-duration: 500ms;
+}
+.navList>a:hover{
+  text-shadow: -2px -2px 2px  #BD397B, 2px 2px 2px #39BDBD;
+  transition-duration: 500ms;
+}
+
+.members:hover{
+  box-shadow: none;
+}
+
+/* ********************************************************
+MEDIA QUERIES
+******************************************************** */
+@media screen and (max-width : 1440px){
+  .wrapper{
+    width: 100%;
+  }
+  .playerInfo{
+    border-radius: 4px;
+  }
+}
+@media screen and (max-width : 1002px){
+  .grid-2{
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+
+  }
+  .playerInfo{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 1500px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    border: 2px solid black;
+  }
+  .block-1, .block-3{
+    padding: 30px;
+    background: none;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    display: block;
+    
+  }
+  nav{
+    padding: 0 20px;
+    width: 100%;
+  }
+  .block-3{
+    position: relative;
+    top: -150px;
+  }
+  iframe{
+    position: static;
+  }
+  
+}
+@media screen and (max-width: 822px){
+  .tabs img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 632px){
+  
+  header{
+    margin-bottom: 20px;
+  }
+  .splash{
+    margin-bottom: 50px;
+  }
+  
+  .navBtn{
+    height: 75px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .bar1.flip1{
+    rotate: -45deg;
+    transition: .3s ease-in;
+  }
+  .bar2.flip2{
+    rotate: 45deg;
+    transition: .3s ease-in;
+  }
+  .navList.show{
+    padding:20px;
+    margin-bottom: 200px;
+    top: 300px;
+    
+    transition: .3s ease-in;
+  }
+  .navList{
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    top: -300px;
+    margin-bottom: -200px;
+    transition: .3s ease-in;
+  }
+  
+}
+    
