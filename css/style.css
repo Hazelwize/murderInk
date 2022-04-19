@@ -398,12 +398,20 @@ MEDIA QUERIES
     margin-bottom: -200px;
     transition: .3s ease-in;
   }
+  
   .gridTwoTitle{
     font-size: 8rem;
   }
   
+  
+  
 }
 @media screen and (max-width: 470px){
+  .members{
+    height: 35px;
+    margin-bottom: 0;
+  }
+
   .navBtn{
     margin-bottom: -30px;
   }
@@ -411,6 +419,7 @@ MEDIA QUERIES
     font-size: 4rem;
   }
   .gridTwoTitle{
+    margin-top: 50px;
     font-size: 6rem;
   }
   .favorites span{
@@ -420,13 +429,21 @@ MEDIA QUERIES
     font-size: 2.5rem;
   }
   iframe{
+    margin-top: -170px;
     width: 340px;
+  }
+  .block-3{
+    padding: 0;
+    height: auto;
   }
 
 }
 @media screen and (max-width:340px){
   .gridTwoTitle{
     font-size: 5rem;
+  }
+  body{
+    font-size: 2rem;
   }
  
 }
