@@ -345,6 +345,9 @@ MEDIA QUERIES
   .tabs img {
     display: none;
   }
+  .splash{
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 632px){
@@ -392,6 +395,12 @@ MEDIA QUERIES
   
 }
 @media screen and (max-width: 470px){
+  .navBtn{
+    margin-bottom: -30px;
+  }
+  .navList{
+    font-size: 4rem;
+  }
   .gridTwoTitle{
     font-size: 6rem;
   }
@@ -402,7 +411,7 @@ MEDIA QUERIES
     font-size: 2.5rem;
   }
   iframe{
-    width: 300px;
+    width: 340px;
   }
 
 }
@@ -410,8 +419,6 @@ MEDIA QUERIES
   .gridTwoTitle{
     font-size: 5rem;
   }
-  .splash{
-    padding: 0;
-  }
+ 
 }
     
