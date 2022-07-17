@@ -22,7 +22,7 @@ You don't have to include this section but interviewers *love* that you can not 
 This was a heavy vanilla CSS project when I made it. I really tried to push myself to make something unique by implementing the glow of the background and the customized background shattered colors effect. I got really comfortable with linear-gradient, pseudo-classes for clicked elements, and positiioning for the folder in different viewports.
 
 ## Examples:
-Take a look at these couple examples that I have in my own portfolio:
+Take a look at these examples that I have in my own portfolio:
 
 **Portfolio Site:** https://github.com/Hazelwize/Portfolio
 
